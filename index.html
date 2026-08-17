@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wattna Singha | IT Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header>
+
+    <nav>
+
+      <h2 class="logo">
+
+        Wattna<span>.</span>
+
+      </h2>
+
+      <ul>
+
+        <li><a href="#hero">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#experience">Experience</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+      <div class="language">
+
+        <select id="languageSelect" onchange="changeLanguage(this.value)">
+
+          <option value="en">🇺🇸 English</option>
+
+          <option value="th">🇹🇭 ภาษาไทย</option>
+
+        </select>
+
+      </div>
+
+      <button class="btn cv-btn" onclick="exportCV()">
+        <i class="fa-solid fa-file-pdf"></i>
+        Download CV
+      </button>
+
+    </nav>
+
+  </header>
+
+  <!-- ================= HERO ================= -->
+
+  <section id="hero" class="hero">
+
+    <div class="hero-text">
+
+      <h3 id="hello">
+
+        Hello, I'm
+
+      </h3>
+
+      <h1>
+
+        Wattna Singha
+
+      </h1>
+
+      <h2 id="position">
+
+        IT Specialist
+
+      </h2>
+
+      <p id="description">
+
+        Providing reliable IT support, system administration, and technology
+        solutions to improve business efficiency.
+
+      </p>
+
+      <div class="buttons">
+
+        <a href="#projects" class="primary" id="btnProject">
+
+          View Projects
+
+        </a>
+
+        <a href="#contact" class="secondary" id="btnContact">
+
+          Contact Me
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+
+      <img src="img/profile.jpg" alt="Profile">
+
+    </div>
+
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+
+  <section id="about" class="about-section">
+
+    <h2 id="about_me">
+
+      About Me
+
+    </h2>
+
+    <br>
+
+    <p id="about_description">
+
+      IT Support and System Administration professional with over
+      5 years of experience in IT infrastructure, network management,
+      hardware and software troubleshooting, and web development.
+      Skilled in diagnosing and resolving technical issues while
+      delivering reliable IT solutions that improve business
+      productivity.
+
+    </p>
+
+    <div class="about-info">
+
+      <div class="info-box">
+
+        <i class="fa-solid fa-user"></i>
+
+        <h3>Name</h3>
+
+        <p>Wattna Singha</p>
+
+      </div>
+
+      <div class="info-box">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <h3>Location</h3>
+
+        <p>Thailand</p>
+
+      </div>
+
+      <div class="info-box">
+
+        <i class="fa-solid fa-briefcase"></i>
+
+        <h3>Experience</h3>
+
+        <p>5+ Years</p>
+
+      </div>
+
+      <div class="info-box">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <h3>Email</h3>
+
+        <p>wattna@email.com</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+
+  <section id="skills" class="skills-section">
+
+    <h2 id="skills_title">
+
+      Skills
+
+    </h2>
+
+    <div class="skill-category">
+
+      <h3 id="itsupport">
+
+        💻 IT Support
+
+      </h3>
+
+      <div class="cards">
+
+        <div class="card">
+
+          <i class="fa-brands fa-windows"></i>
+
+          <h4>Windows</h4>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-computer"></i>
+
+          <h4>Hardware</h4>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+
+          <h4>Software</h4>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-network-wired"></i>
+
+          <h4>Network</h4>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-robot"></i>
+
+          <h4>Artificial Intelligence (AI)</h4>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="skill-category">
+
+      <h3 id="webdev">
+
+        🌐 Web Development
+
+      </h3>
+
+      <div class="cards">
+
+        <div class="card">
+
+          <i class="fa-brands fa-html5"></i>
+
+          <h4>HTML5</h4>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-brands fa-css3-alt"></i>
+
+          <h4>CSS3</h4>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-brands fa-js"></i>
+
+          <h4>JavaScript</h4>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-brands fa-php"></i>
+
+          <h4>PHP</h4>
+
+        </div>
+
+        <div class="card">
+
+          <i class="fa-solid fa-database"></i>
+
+          <h4>MySQL</h4>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= EXPERIENCE ================= -->
+
+  <section id="experience" class="experience-section">
+
+    <h2 id="experience_title">
+      Work Experience
+    </h2>
+
+    <div class="timeline">
+
+      <!-- ================= SWP ================= -->
+
+      <div class="timeline-item">
+
+        <div class="timeline-year" id="exp_date1">
+          Jul 2024 - Present
+        </div>
+
+        <div class="timeline-content">
+
+          <h3>SWP Venture Co., Ltd.</h3>
+
+          <h4 id="exp_position1">
+            IT Support & Developer
+          </h4>
+
+          <ul id="exp_list1">
+
+            <li>Managed and maintained the company website and internal systems.</li>
+
+            <li>Developed and enhanced websites based on business requirements.</li>
+
+            <li>Designed and implemented new system features.</li>
+
+            <li>Provided hardware and software technical support.</li>
+
+            <li>Installed and configured PCs, printers and mobile devices.</li>
+
+            <li>Managed IT assets and inventory control.</li>
+
+            <li>Administered QNAP NAS and backup systems.</li>
+
+            <li>Troubleshot LAN, Internet and network connectivity issues.</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!-- ================= THAI SENG ================= -->
+
+      <div class="timeline-item">
+
+        <div class="timeline-year" id="exp_date2">
+          Nov 2021 - Mar 2024
+        </div>
+
+        <div class="timeline-content">
+
+          <h3>Thai Seng International (Thailand) Co., Ltd.</h3>
+
+          <h4 id="exp_position2">
+            IT Support & Programmer
+          </h4>
+
+          <ul id="exp_list2">
+
+            <li>Developed and maintained company websites and applications.</li>
+
+            <li>Improved system performance and user experience.</li>
+
+            <li>Provided IT support for hardware, software and network.</li>
+
+            <li>Managed LAN and wireless network infrastructure.</li>
+
+            <li>Maintained CCTV and telephone systems.</li>
+
+            <li>Installed and configured IT equipment.</li>
+
+            <li>Controlled IT assets and documentation.</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!-- ================= CJ ================= -->
+
+      <div class="timeline-item">
+
+        <div class="timeline-year" id="exp_date3">
+          Oct 2020 - Jun 2021
+        </div>
+
+        <div class="timeline-content">
+
+          <h3>CJ Manufacturing Company Limited</h3>
+
+          <h4 id="exp_position3">
+            IT Support
+          </h4>
+
+          <ul id="exp_list3">
+
+            <li>Provided technical support for internal users.</li>
+
+            <li>Installed and configured computer hardware and software.</li>
+
+            <li>Maintained LAN network and computer systems.</li>
+
+            <li>Managed IT inventory and asset tracking.</li>
+
+            <li>Prepared IT reports and documentation.</li>
+
+            <li>Supported ERP system users.</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!-- ================= YCH ================= -->
+
+      <div class="timeline-item">
+
+        <div class="timeline-year" id="exp_date4">
+          Sep 2018 - Oct 2019
+        </div>
+
+        <div class="timeline-content">
+
+          <h3>YCH (Thailand) Co., Ltd.</h3>
+
+          <h4 id="exp_position4">
+            IT Support (Internship)
+          </h4>
+
+          <ul id="exp_list4">
+
+            <li>Assisted the IT team in daily operations.</li>
+
+            <li>Installed and configured IT equipment.</li>
+
+            <li>Maintained network systems and computer hardware.</li>
+
+            <li>Provided technical support for employees.</li>
+
+            <li>Supported IT asset management and documentation.</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+
+  <section id="projects" class="project-section">
+
+    <h2 id="projects_title">
+
+      Featured Projects
+
+    </h2>
+
+    <div class="project-grid">
+
+      <!-- Project 1 -->
+
+      <div class="project">
+
+        <div class="project-slider">
+
+          <button class="slider-btn prev">&#10094;</button>
+
+          <img src="img/4.jpg" class="project-slide active">
+
+          <img src="img/5.jpg" class="project-slide">
+
+          <img src="img/6.jpg" class="project-slide">
+
+          <img src="img/2.jpg" class="project-slide">
+
+          <img src="img/9.jpg" class="project-slide">
+
+          <button class="slider-btn next">&#10095;</button>
+
+          <div class="slider-dots">
+
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+          </div>
+
+        </div>
+
+        <div class="project-content">
+
+          <span class="badge">
+
+            Private Project
+
+          </span>
+
+          <h3>
+
+            Projects & Technical Support
+
+          </h3>
+
+          <p>
+
+            Showcase of IT projects, technical support experience, and system troubleshooting solutions.
+
+          </p>
+
+          <div class="tech">
+
+            <span>Hardware</span>
+
+            <span>Software</span>
+
+            <span>Windows</span>
+
+            <span>Network</span>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- Project 2 -->
+
+      <div class="project">
+
+        <div class="project-slider">
+
+          <button class="slider-btn prev">&#10094;</button>
+
+          <img src="img/index.png" class="project-slide active">
+
+          <img src="img/re.png" class="project-slide">
+
+          <img src="img/register.png" class="project-slide">
+
+          <img src="img/formedit_swp.png" class="project-slide">
+
+          <img src="img/dashboard.png" class="project-slide">
+
+          <img src="img/admin_resing.png" class="project-slide">
+
+
+
+          <button class="slider-btn next">&#10095;</button>
+
+          <div class="slider-dots">
+
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+          </div>
+
+        </div>
+
+        <div class="project-content">
+
+          <span class="badge">
+
+            Private Project
+
+          </span>
+
+          <h3>
+
+            Stock Product System
+
+          </h3>
+
+          <p>
+
+            A web-based inventory management system designed to manage products, monitor stock levels, track inventory
+            movements, and generate reports in real time.
+
+          </p>
+
+          <div class="tech">
+
+            <span>HTML</span>
+
+            <span>CSS</span>
+
+            <span>JavaScript</span>
+
+            <span>PHP</span>
+
+            <span>MySQL</span>
+
+          </div>
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Project 3 -->
+
+      <div class="project">
+
+        <div class="project-slider">
+
+          <button class="slider-btn prev">&#10094;</button>
+
+          <img src="img/live.jpg" class="project-slide active">
+
+          <img src="img/live1.jpg" class="project-slide">
+
+          <img src="img/live2.jpg" class="project-slide">
+
+          <img src="img/live3.jpg" class="project-slide">
+
+
+          <button class="slider-btn next">&#10095;</button>
+
+          <div class="slider-dots">
+
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+          </div>
+
+        </div>
+
+        <div class="project-content">
+
+          <span class="badge">
+
+            Private Project
+
+          </span>
+
+          <h3>
+
+            Live Streaming & Technical Support
+
+          </h3>
+
+          <p>
+
+            Configured streaming software, audio, video, and hardware for stable live broadcasts.
+
+          </p>
+
+          <div class="tech">
+
+            <span>Streaming Software Setup</span>
+
+            <span>Audio & Video Configuration</span>
+
+            <span>Streaming Hardware Setup</span>
+
+            <span>Network Optimization</span>
+
+            <span>Platform Integration</span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+  </section>
+
+
+
+
+  <!-- ================= EDUCATION ================= -->
+
+  <section id="education" class="education-section">
+
+    <h2 id="education_title">Education</h2>
+
+    <div class="education-container">
+
+      <div class="education-box">
+        <img src="img/education.png" alt="Education" class="education-icon">
+
+        <h3>
+
+          Bangkok College Of Business Administration And Tourism
+
+        </h3>
+
+        <p>
+
+          Business Computer
+
+        </p>
+
+        <p1>(2018 - 2020)</p>
+
+          <span>
+
+            GPA: 3.16
+
+          </span>
+
+      </div>
+
+      <div class="education-box">
+
+        <img src="img/education.png" alt="Education" class="education-icon">
+
+
+        <h3>
+
+          Bangkok College Of Business Administration And Tourism
+
+        </h3>
+
+        <p>
+
+          Business Computer
+
+        </p>
+
+        <p1>(2016 - 2018)</p>
+
+          <span>
+            GPA: 2.50
+          </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+
+  <section id="contact" class="contact-section">
+
+    <h2 id="contact_title">
+
+      Contact
+
+    </h2>
+
+    <p class="contact-subtitle">
+
+      Feel free to contact me anytime.
+
+    </p>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <h3>Email</h3>
+
+        <p>
+
+          wattna19071999@email.com
+
+        </p>
+
+      </div>
+
+      <div class="contact-card">
+
+        <i class="fa-brands fa-facebook"></i>
+
+        <h3>Facebook</h3>
+
+        <p>
+
+          Wattna Singha
+
+        </p>
+
+      </div>
+
+      <div class="contact-card">
+
+        <i class="fa-brands fa-github"></i>
+
+        <h3>GitHub</h3>
+
+        <p>
+
+          github.com/wattna
+
+        </p>
+
+      </div>
+
+      <div class="contact-card">
+
+        <i class="fa-brands fa-line"></i>
+
+        <h3>Line</h3>
+
+        <p>
+
+          kid988
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div class="footer-content">
+
+      <h2>
+
+        Wattna<span>.</span>
+
+      </h2>
+
+      <p>
+
+        IT Specialist | IT Support | Web Developer
+
+      </p>
+
+      <div class="social">
+
+        <a href="#">
+
+          <i class="fa-brands fa-facebook"></i>
+
+        </a>
+
+        <a href="#">
+
+          <i class="fa-brands fa-github"></i>
+
+        </a>
+
+        <a href="#">
+
+          <i class="fa-brands fa-linkedin"></i>
+
+        </a>
+
+        <a href="#">
+
+          <i class="fa-solid fa-envelope"></i>
+
+        </a>
+
+      </div>
+
+      <p class="copyright">
+
+        © 2026 Wattna Singha.
+        All Rights Reserved.
+
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= BACK TO TOP ================= -->
+
+  <button id="topBtn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+  </button>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</body>
+
+</html>
